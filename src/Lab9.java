@@ -60,7 +60,7 @@ public class Lab9 {
 		}
 		printMenu();
 	
-		} while(userInput1.equals(""));
+		} while(userInput1.equals("y"));;
 		
 		System.out.println("No Worries, Come Again!");
 			
