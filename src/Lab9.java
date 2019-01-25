@@ -39,7 +39,7 @@ public class Lab9 {
 		System.out.println("What would you like to order?");
 			
 		orderStuff = scnr.nextLine(); //initializing 
-		if(menu.get(orderStuff) != null) {
+		if(menu.get(orderStuff) == null) {
 			System.out.println("Invaild Entry");
 			continue;
 		}
@@ -49,6 +49,7 @@ public class Lab9 {
 		
 		purchasedItems.add(orderStuff); // 
 		totalCost.add(menu.get(orderStuff));
+		scnr.nextLine();
 		
 		System.out.println("Would you like to order anything else? y/n");
 		userInput1 = scnr.nextLine();
